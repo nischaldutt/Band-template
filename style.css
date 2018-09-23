@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+html, body, header, #intro {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+.navbar, #main-text {
+    color: white;
+}
+
+#intro {
+    background: url("https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?cs=srgb&dl=audience-band-concert-1105666.jpg&fm=jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.full-bg-img {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#main-text {
+    position: relative;
+    top: 35vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.size {
+    height: 160px;
+    width: 260px;
+}
+
+.figure {
+    transition: .2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.figure:hover {
+    transform: scale(1.1);
+}
+
+#tour {
+    background: url("https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-img {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ticket-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-wrapper > form{
+    width: 50%;
+}
+
+@media (max-width: 580px) {
+    #main-text .display-3 {
+        font-size: 9vw;
+    }
+
+    #main-text .lead {
+        font-size: 4vw;
+    }
+
+    #main-text .btn {
+        font-size: 3vw;
+    }
+
+    .contact-wrapper > form {
+        width: 100%;
+    }
+}
